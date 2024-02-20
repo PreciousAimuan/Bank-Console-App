@@ -38,8 +38,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 5,
@@ -50,8 +54,7 @@
               "RelativeToolTip": "Model\\Customer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T16:43:22.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-20T16:43:22.768Z"
             },
             {
               "$type": "Document",
@@ -61,7 +64,7 @@
               "RelativeDocumentMoniker": "Accountepo\\AccountService.cs",
               "ToolTip": "C:\\Users\\ZBOOK 14U G6\\source\\repos\\sq20-net-week-5-task-PreciousAimuan\\Accountepo\\AccountService.cs",
               "RelativeToolTip": "Accountepo\\AccountService.cs",
-              "ViewState": "AQIAAN8AAAAAAAAAAAAkwPUAAAANAAAA",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAowPYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-20T15:59:01.512Z",
               "EditorCaption": ""
@@ -76,8 +79,7 @@
               "RelativeToolTip": "CustomerRepo\\CustomerService.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAAAB0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T14:59:40.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-20T14:59:40.036Z"
             },
             {
               "$type": "Document",
@@ -89,8 +91,7 @@
               "RelativeToolTip": "Helper\\Validation.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAAmwB0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T15:07:40.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-20T15:07:40.354Z"
             },
             {
               "$type": "Document",
@@ -102,8 +103,7 @@
               "RelativeToolTip": "Dashboard.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwBoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T14:58:37.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-20T14:58:37.939Z"
             },
             {
               "$type": "Document",
@@ -115,8 +115,7 @@
               "RelativeToolTip": "StartMenu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T12:52:56.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-20T12:52:56.275Z"
             },
             {
               "$type": "Document",
@@ -128,8 +127,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-20T12:52:38.294Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-20T12:52:38.294Z"
             }
           ]
         }
