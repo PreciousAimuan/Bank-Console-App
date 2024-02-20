@@ -1,10 +1,24 @@
 ﻿namespace SQ20.Net_Week5_Task
 {
-    internal class Program
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Transactions;
+
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            StartMenu.Authenticate();
+
+            
+            
         }
     }
+
+   
+
+
+
+
 }

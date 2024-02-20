@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "MVt9XTX23tubM1OOthtchEm0s7p56m5kSoACsQ6p689dW4/hVcyLEWBAKGwv0hLhK6az5zX6e+EODXnCUu3oXQ==",
+  "dgSpecHash": "AYpjfxmBjqXOboYTL+WkhsDx1t6yAR3I5Qk7kNewQS0bGhhg+OX2fRT6mK6+pnULrIh6EHSlgEKATJCJ8JSTkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Decagon\\source\\repos\\SQ20.Net-Week5-Task\\SQ20.Net-Week5-Task.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ZBOOK 14U G6\\source\\repos\\sq20-net-week-5-task-PreciousAimuan\\SQ20.Net-Week5-Task.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZBOOK 14U G6\\.nuget\\packages\\consoletables\\2.6.1\\consoletables.2.6.1.nupkg.sha512",
+    "C:\\Users\\ZBOOK 14U G6\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\ZBOOK 14U G6\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\ZBOOK 14U G6\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\ZBOOK 14U G6\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
   "logs": []
 }
