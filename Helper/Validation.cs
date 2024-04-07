@@ -11,24 +11,24 @@ namespace SQ20.Net_Week5_Task.Helper
 {
     public class Validation
     {
+       
         public static bool IsValidEmail(string email)
         {
-            try
-            {
-                var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
-            }
-            catch
-            {
-                return false;
-            }
+            return !string.IsNullOrEmpty(email) && Regex.IsMatch(email, @"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$");
         }
 
         public static bool Choice(string accountChoice)
         {
             return !string.IsNullOrEmpty(accountChoice) && Regex.IsMatch(accountChoice, @"^[1-2]{1}$");
         }
-
+       /* public static bool Dash(string accountChoice)
+        {
+            return !string.IsNullOrEmpty(accountChoice) && Regex.IsMatch(accountChoice, @"^[1-7]{1}$");
+        }*/
+        public static bool IsTwo(string input)
+        {
+            return !string.IsNullOrEmpty(input) && Regex.IsMatch(input, @"^[2]{1}$");
+        }
         public static bool IsStrongPassword(string password)
         {
             return Regex.IsMatch(password, @"^(?=.*[a-zA-Z])(?=.*\d)(?=.*[@#$%^&!]).{6,}$");

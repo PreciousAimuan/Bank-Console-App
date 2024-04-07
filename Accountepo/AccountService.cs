@@ -18,7 +18,7 @@ namespace SQ20.Net_Week5_Task.Accountepo
         public static List<Account> accounts = new List<Account>();
         public static List<TransactionHistory> transactionHistory = new List<TransactionHistory>();
 
-        public static List<Account> CreateAccount(Customer loggedInCustomer)
+        public static List<Account> CreateAccount(Customer loggedInCustomer)  // loggedin where we store data for the logged in customer
         {
             Console.WriteLine("Press 1 for Savings account or 2 for Current account:");
             var accountChoice = Console.ReadLine();
@@ -28,7 +28,7 @@ namespace SQ20.Net_Week5_Task.Accountepo
                 accountChoice = Console.ReadLine();
             }
 
-            switch (accountChoice)
+            switch (accountChoice)  // to gen acc no
             {
                 case "1":
                     var account = new Account
@@ -53,9 +53,9 @@ namespace SQ20.Net_Week5_Task.Accountepo
                     break;
             }
 
-            foreach (var item in accounts)
+            foreach (var item in accounts)  //print so we can get access to acc no detail
             {
-                Console.WriteLine($"{loggedInCustomer.FirstName} {loggedInCustomer.LastName} {item.AccountNumber} {item.Balance} {item.Type}");
+                Console.WriteLine($"{loggedInCustomer.FirstName} {loggedInCustomer.LastName} {item.AccountNumber} {item.Balance} {item.Type}"); //accounts.AccountsNmber.
             }
             Console.WriteLine("Enter 1 to go back to dasboard or 2 to exit");
             Console.Write("Enter input: ");
@@ -72,11 +72,16 @@ namespace SQ20.Net_Week5_Task.Accountepo
                 Console.Clear();
                 Dashboard.displayDashboard(loggedInCustomer);
             }
-           /* else
+            if (input == "2")
             {
-              
-            }*/
+                Console.Clear();
+                Environment.Exit(1);
+                //return null;  
+
+            }
+            
             return accounts;
+
             
         }
 
@@ -86,7 +91,7 @@ namespace SQ20.Net_Week5_Task.Accountepo
             string accountNumber = Console.ReadLine();
 
             // Find the account
-            var account = accounts.FirstOrDefault(a => a.AccountNumber == accountNumber);
+            var account = accounts.FirstOrDefault(a => a.AccountNumber == accountNumber);  //check
             if (account == null)
             {
                 Console.WriteLine("Account not found.");
@@ -95,7 +100,7 @@ namespace SQ20.Net_Week5_Task.Accountepo
 
             Console.Write("Enter amount to deposit: ");
             decimal amount;
-            if (!decimal.TryParse(Console.ReadLine(), out amount) || amount <= 0)
+            if (!decimal.TryParse(Console.ReadLine(), out amount) || amount <= 0)  // if not in dec form, or value is zero or less
             {
                 Console.WriteLine("Invalid amount. Please enter a valid positive number.");
                 return;
@@ -115,13 +120,30 @@ namespace SQ20.Net_Week5_Task.Accountepo
             };
             transactionHistory.Add(transaction);
 
-            Console.WriteLine("Enter 1 to go back to dasboard or close the window exit");
+            Console.WriteLine("Enter 1 to go back to dasboard or 2 to exit");//HERE!
             Console.Write("Enter input: ");
             var input = Console.ReadLine();
+            while (Validation.Choice(input) == false)
+            {
+                Console.WriteLine("Enter 1 or 2");
+                input = Console.ReadLine();
+            }
+
+            /*Console.Clear();
+            Dashboard.displayDashboard(customer);*/
+
             if (input == "1")
             {
                 Console.Clear();
                 Dashboard.displayDashboard(customer);
+            }
+
+            if (input == "2")
+            {
+                Console.Clear();
+                Environment.Exit(1);
+                //return null;
+
             }
 
 
@@ -186,13 +208,19 @@ namespace SQ20.Net_Week5_Task.Accountepo
             };
             transactionHistory.Add(transaction);
 
-            Console.WriteLine("Enter 1 to go back to dasboard or close the window exit");
+            Console.WriteLine("Enter 1 to go back to dasboard or 2 to exit");
             Console.Write("Enter input: ");
             var input = Console.ReadLine();
             if (input == "1")
             {
                 Console.Clear();
                 Dashboard.displayDashboard(customer);
+            }
+            if (input == "2")
+            {
+                Console.Clear();
+                Environment.Exit(1);
+                //return null;
             }
         }
 
@@ -239,13 +267,19 @@ namespace SQ20.Net_Week5_Task.Accountepo
             };
             transactionHistory.Add(transaction);
 
-            Console.WriteLine("Enter 1 to go back to dasboard or close the window exit");
+            Console.WriteLine("Enter 1 to go back to dasboard or 2 to exit");
             Console.Write("Enter input: ");
             var input = Console.ReadLine();
             if (input == "1")
             {
                 Console.Clear();
                 Dashboard.displayDashboard(customer);
+            }
+            if (input == "2")
+            {
+                Console.Clear();
+                Environment.Exit(1);
+                //return null;
             }
         }
 
@@ -264,13 +298,19 @@ namespace SQ20.Net_Week5_Task.Accountepo
 
             Console.WriteLine($"Current balance for account {accountNumber}: {account.Balance}");
 
-            Console.WriteLine("Enter 1 to go back to dashboard or close the window to exit");
+            Console.WriteLine("Enter 1 to go back to dashboard or 2 to exit");
             Console.Write("Enter input: ");
             var input = Console.ReadLine();
             if (input == "1")
             {
                 Console.Clear();
                 Dashboard.displayDashboard(customer);
+            }
+            if (input == "2")
+            {
+                Console.Clear();
+                Environment.Exit(1);
+                //return null;
             }
         }
 
@@ -300,13 +340,19 @@ namespace SQ20.Net_Week5_Task.Accountepo
 
             Console.WriteLine($"Current balance for account {accountNumber}: {account.Balance}");
 
-            Console.WriteLine("Enter 1 to go back to dashboard or close the window to exit");
+            Console.WriteLine("Enter 1 to go back to dashboard or 2 to exit");
             Console.Write("Enter input: ");
             var input = Console.ReadLine();
             if (input == "1")
             {
                 Console.Clear();
                 Dashboard.displayDashboard(customer);
+            }
+            if (input == "2")
+            {
+                Console.Clear();
+                Environment.Exit(1);
+                //return null;
             }
         }
 
@@ -335,7 +381,7 @@ namespace SQ20.Net_Week5_Task.Accountepo
 
             Console.WriteLine($"Current balance for account {accountNumber}: {account.Balance}");
 
-            Console.WriteLine("Enter 1 to go back to dashboard or close the window to exit");
+            Console.WriteLine("Enter 1 to go back to dashboard or 2 to exit");
             Console.Write("Enter input: ");
             var input = Console.ReadLine();
             if (input == "1")
@@ -343,12 +389,13 @@ namespace SQ20.Net_Week5_Task.Accountepo
                 Console.Clear();
                 Dashboard.displayDashboard(customer);
             }
+            if (input == "2")
+            {
+                Console.Clear();
+                Environment.Exit(1);
+                //return null;
+            }
         }
-
-
-
-
-
 
     }
 

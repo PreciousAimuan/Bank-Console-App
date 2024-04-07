@@ -82,10 +82,14 @@ namespace SQ20.Net_Week5_Task.CustomerRepo
             Console.WriteLine("PRESS 2 TO LOGIN");
             Console.Write("Enter input: ");
             var input = Console.ReadLine();
-            if (input == "2")
+            while(Validation.IsTwo(input) == false)
             {
-                Login();
+                Console.WriteLine("PRESS 2 TO LOGIN");
+                Console.Write("Re-Enter input: ");
+                input = Console.ReadLine();
             }
+            Login();
+           
 
         }
 
@@ -106,7 +110,9 @@ namespace SQ20.Net_Week5_Task.CustomerRepo
             }
             else
             {
-                Login();
+                Console.WriteLine("No matching data was found!, Register First");
+                CustomerService.Register();
+               // Login();
                 return null;
             }
             return customer;

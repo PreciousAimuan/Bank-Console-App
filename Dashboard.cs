@@ -20,41 +20,50 @@ namespace SQ20.Net_Week5_Task
             Console.Write("ENTER INPUT: ");
             var input = Console.ReadLine();
 
-            switch (input)
+            while (input != null)
             {
-                case "1":
+                switch (input)
+                {
+                    case "1":
 
-                    AccountService.CreateAccount(customer);
-                    break;
+                        AccountService.CreateAccount(customer);
+                        break;
 
-                case "2":
+                    case "2":
 
-                    AccountService.DepositIntoAccount(customer);
-                    break;
+                        AccountService.DepositIntoAccount(customer);
+                        break;
 
-                case "3":
+                    case "3":
 
-                    AccountService.Transfer(customer);
-                    break;
+                        AccountService.Transfer(customer);
+                        break;
 
-                case "4":
+                    case "4":
 
-                    AccountService.WithdrawFromAccount(customer);
-                    break;
+                        AccountService.WithdrawFromAccount(customer);
+                        break;
 
-                case "5":
+                    case "5":
 
-                    AccountService.GetAccountBalance(customer);
-                    break;
+                        AccountService.GetAccountBalance(customer);
+                        break;
 
-                case "6":
+                    case "6":
 
-                    AccountService.GetAccountStatement(customer);
-                    break;
+                        AccountService.GetAccountStatement(customer);
+                        break;
 
-                default:
-                    AccountService.GetAccountDetails(customer);
-                    break;
+                    case "7":
+                        AccountService.GetAccountDetails(customer);
+                        break;
+
+                    default:
+                        Console.Write("RE-ENTER INPUT: ");
+                        input = Console.ReadLine();
+                        break;
+
+                }
 
             }
                   

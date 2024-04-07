@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQ20.Net-Week5-Task", "SQ20.Net-Week5-Task.csproj", "{9DBAC167-EC92-4020-8D42-ACC5298B6E85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQ20.Net-Week5-Task", "SQ20.Net-Week5-Task.csproj", "{9DBAC167-EC92-4020-8D42-ACC5298B6E85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.UnitTests", "..\Project.UnitTests\Project.UnitTests.csproj", "{ECD24105-9401-464E-B02E-604BA94E231A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{9DBAC167-EC92-4020-8D42-ACC5298B6E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DBAC167-EC92-4020-8D42-ACC5298B6E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DBAC167-EC92-4020-8D42-ACC5298B6E85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECD24105-9401-464E-B02E-604BA94E231A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECD24105-9401-464E-B02E-604BA94E231A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECD24105-9401-464E-B02E-604BA94E231A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECD24105-9401-464E-B02E-604BA94E231A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
